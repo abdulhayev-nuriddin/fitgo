@@ -1,0 +1,16 @@
+.about {
+    padding-top: 100px;
+    height: 100vh;
+
+    &__top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+    }
+
+    &__span {
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+}

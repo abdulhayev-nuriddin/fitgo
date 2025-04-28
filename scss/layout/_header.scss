@@ -1,0 +1,86 @@
+.header {
+    background: #063835;
+    height: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 999;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__banner {
+        transition: all 0.3s ease;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+    }
+
+    &__list {
+        display: flex;
+        gap: 40px;
+    }
+
+    &__links {
+        color: #fff;
+        opacity: 0.6;
+        transition: all 0.3s ease;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 1;
+        }
+    }
+
+    &__register {
+        display: flex;
+        gap: 12px;
+    }
+
+    &__login {
+        padding: 20px 26px;
+        border-radius: 40px;
+        border: 2px solid #fff;
+        color: #fff;
+        transition: all 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+
+    &__signup {
+        padding: 20px 26px;
+        border-radius: 40px;
+        border: 2px solid #fff;
+        background-color: #fff;
+        transition: all 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+            background-color: transparent;
+            color: #fff;
+        }
+    }
+}

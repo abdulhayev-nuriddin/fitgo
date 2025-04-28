@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  font-family: "Russo One", sans-serif !important;
+}
+
+p,
+a,
+span {
+  font-family: "Inter Tight", sans-serif;
+}
+
+:root {
+  --black-color: #121212;
+  --white-color: #FAFAFA;
+}
+
+.dark-theme {
+  --black-color: #FAFAFA;
+  --white-color: #121212;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: var(--black-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+input,
+textarea,
+select,
+button,
+label {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1280px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 668px;
+    padding: 0 15px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .container {
+    max-width: 380px;
+    padding: 0 10px;
+  }
+}
+#scrollProgressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background-color: #2979ff;
+  z-index: 1000;
+  width: 0;
+}
+
+#loader {
+  width: 80px;
+  height: 80px;
+  border: 5px solid transparent;
+  border-top: 5px solid #2979ff;
+  border-bottom: 5px solid #2979ff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+#loader.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.hidden-content {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.hidden-content.show {
+  opacity: 1;
+}
+
+.header {
+  background: #063835;
+  height: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 999;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__banner {
+  transition: all 0.3s ease;
+}
+.header__banner:hover {
+  opacity: 0.8;
+}
+.header__banner:active {
+  opacity: 0.6;
+}
+.header__list {
+  display: flex;
+  gap: 40px;
+}
+.header__links {
+  color: #fff;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+.header__links:hover {
+  opacity: 0.8;
+}
+.header__links:active {
+  opacity: 1;
+}
+.header__register {
+  display: flex;
+  gap: 12px;
+}
+.header__login {
+  padding: 20px 26px;
+  border-radius: 40px;
+  border: 2px solid #fff;
+  color: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.header__login:hover {
+  background-color: #fff;
+  color: #000;
+}
+.header__login:active {
+  transform: scale(0.95);
+}
+.header__signup {
+  padding: 20px 26px;
+  border-radius: 40px;
+  border: 2px solid #fff;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.header__signup:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.hero {
+  background-color: #063835;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.hero__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.hero__title {
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 120%;
+  letter-spacing: 1%;
+  color: #fff;
+}
+.hero__span {
+  background-color: #C3FF44;
+  color: #063835;
+  position: absolute;
+  left: 250px;
+}
+.hero__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 2%;
+  color: #fff;
+  padding-top: 16px;
+  padding-bottom: 32px;
+}
+.hero__button {
+  padding: 20px 31px;
+  border-radius: 40px;
+  background-color: #FE4F31;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.hero__button:hover {
+  transform: scale(1.1);
+}
+.hero__button:active {
+  transform: scale(0.9);
+}
+.hero__km {
+  padding: 29px 16px;
+  background: #0F9089;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  position: absolute;
+  top: 163px;
+  right: 109px;
+  font-size: 30px;
+  color: #fff;
+}
+.hero__icon {
+  padding: 14px;
+  background-color: #fff;
+  background-image: url(../../images/treadmill.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
+  border-radius: 50%;
+}
+.hero__background {
+  width: 100%;
+  position: absolute;
+  top: 80%;
+}
+
+.about {
+  padding-top: 100px;
+  height: 100vh;
+}
+.about__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+}
+.about__span {
+  font-weight: 600;
+  text-transform: uppercase;
+}/*# sourceMappingURL=main.css.map */

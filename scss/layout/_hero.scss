@@ -1,0 +1,88 @@
+.hero {
+    background-color: #063835;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 96px;
+        line-height: 120%;
+        letter-spacing: 1%;
+        color: #fff;
+    }
+
+    &__span {
+        background-color: #C3FF44;
+        color: #063835;
+        position: absolute;
+        left: 250px;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: 2%;
+        color: #fff;
+        padding-top: 16px;
+        padding-bottom: 32px;
+    }
+
+    &__button {
+        padding: 20px 31px;
+        border-radius: 40px;
+        background-color: #FE4F31;
+        color: #fff;
+        transition: all 0.3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &:active {
+            transform: scale(0.9);
+        }
+    }
+
+    &__km {
+        padding: 29px 16px;
+        background: #0F9089;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        position: absolute;
+        top: 163px;
+        right: 109px;
+        font-size: 30px;
+        color: #fff;
+    }
+
+    &__icon {
+        padding: 14px;
+        background-color: #fff;
+        background-image: url(../../images/treadmill.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.3;
+        border-radius: 50%;
+    }
+
+    &__background {
+        width: 100%;
+        position: absolute;
+        top: 80%;
+    }
+}
