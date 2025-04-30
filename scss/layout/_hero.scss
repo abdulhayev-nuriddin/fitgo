@@ -24,9 +24,11 @@
 
     &__span {
         background-color: #C3FF44;
+        font-weight: 900;
         color: #063835;
         position: absolute;
         left: 250px;
+        transform: skew(-15deg);
     }
 
     &__text {
@@ -45,6 +47,7 @@
         background-color: #FE4F31;
         color: #fff;
         transition: all 0.3s ease;
+        font-weight: 600;
 
         &:hover {
             transform: scale(1.1);
@@ -64,7 +67,7 @@
         align-items: center;
         gap: 16px;
         position: absolute;
-        top: 163px;
+        top: 165px;
         right: 109px;
         font-size: 30px;
         color: #fff;
@@ -72,11 +75,11 @@
 
     &__icon {
         padding: 14px;
-        background-color: #fff;
+        background-color: #000;
         background-image: url(../../images/treadmill.png);
         background-repeat: no-repeat;
         background-position: center;
-        opacity: 0.3;
+        opacity: 0.2;
         border-radius: 50%;
     }
 
@@ -84,5 +87,81 @@
         width: 100%;
         position: absolute;
         top: 80%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero {
+        &__title {
+            font-size: 40px;
+        }
+
+        &__img {
+            width: 415px;
+        }
+
+        &__span {
+            left: 110px;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+
+        &__background {
+            top: 85%;
+        }
+
+        &__km {
+            padding: 15px 10px;
+            gap: 10px;
+            font-size: 20px;
+            right: 33px;
+        }
+
+        &__icon {
+            padding: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .hero {
+        margin-top: 55px;
+
+        &__container {
+            flex-direction: column;
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__title {
+            font-size: 37px;
+            line-height: 50px;
+        }
+
+        &__text {
+            text-align: center;
+        }
+
+        &__span {
+            position: static;
+            display: inline-block;
+        }
+
+        &__km {
+            padding: 10px 5px;
+            top: 420px;
+            right: 25px;
+        }
+
+        &__icon {
+            padding: 5px;
+        }
     }
 }

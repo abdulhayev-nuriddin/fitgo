@@ -68,20 +68,20 @@ img {
 .container {
     margin: 0 auto;
     padding: 0 20px;
-    max-width: 1280px;
+    max-width: 1280px !important;
     width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
     .container {
-        max-width: 668px;
+        max-width: 668px !important;
         padding: 0 15px;
     }
 }
 
 @media only screen and (max-width: 480px) {
     .container {
-        max-width: 380px;
+        max-width: 380px !important;
         padding: 0 10px;
     }
 }

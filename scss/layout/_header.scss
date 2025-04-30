@@ -1,6 +1,6 @@
 .header {
     background: #063835;
-    height: 95px;
+    height: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,6 +37,7 @@
         color: #fff;
         opacity: 0.6;
         transition: all 0.3s ease;
+        font-size: 20px;
 
         &:hover {
             opacity: 0.8;
@@ -47,7 +48,7 @@
         }
     }
 
-    &__register {
+    &__registers {
         display: flex;
         gap: 12px;
     }
@@ -81,6 +82,50 @@
         &:hover {
             background-color: transparent;
             color: #fff;
+        }
+
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        height: 55px;
+
+        &__banner {
+            width: 110px;
+            height: auto;
+        }
+
+        &__list {
+            gap: 20px;
+        }
+
+        &__links {
+            font-size: 15px;
+        }
+
+        &__registers {
+            gap: 5px;
+        }
+
+        &__login {
+            padding: 10px 16px;
+        }
+
+        &__signup {
+            padding: 10px 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .header {
+
+        &__list {
+            display: none;
         }
     }
 }

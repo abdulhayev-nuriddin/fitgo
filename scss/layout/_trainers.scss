@@ -1,0 +1,30 @@
+.trainers {
+    margin-top: 100px;
+
+    &__top {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 100%;
+        letter-spacing: -3%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        text-align: center;
+        font-weight: 400;
+        font-size: 80px;
+        line-height: 140%;
+        letter-spacing: 1%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__span1 {
+        background-color: #C3FF44;
+        font-weight: 900;
+        color: #063835;
+        transform: skew(-15deg);
+        display: inline-block;
+    }
+}
