@@ -34,3 +34,43 @@ document.addEventListener("DOMContentLoaded", () => {
   hideLoader();
   updateScrollProgressBar();
 });
+
+// -----------------------------------------------------------------------------
+const burger = document.querySelector(".header__burger");
+const menu = document.querySelector(".header__menu");
+const links = document.querySelectorAll(".header__menu-list a");
+
+// Hamburger menyusini ochish/yopish
+burger.addEventListener("click", () => {
+  const isActive = menu.classList.toggle("active");
+  burger.classList.toggle("active");
+  burger.setAttribute("aria-expanded", isActive.toString());
+});
+
+// Havolalarni bosganda menyu yopiladi va bo‘limga o‘tadi
+links.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    menu.classList.remove("active");
+    burger.classList.remove("active");
+    burger.setAttribute("aria-expanded", "false");
+    const targetId = link.getAttribute("href");
+    if (targetId === "./index.html") {
+      window.location.href = targetId;
+    } else {
+      const target = document.querySelector(targetId);
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  });
+});
+
+// Tashqariga bosilganda menyu yopiladi
+document.addEventListener("click", (e) => {
+  if (!menu.contains(e.target) && !burger.contains(e.target)) {
+    menu.classList.remove("active");
+    burger.classList.remove("active");
+    burger.setAttribute("aria-expanded", "false");
+  }
+});

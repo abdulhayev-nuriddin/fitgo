@@ -1,5 +1,9 @@
 .trainers {
     margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     &__top {
         font-weight: 600;
@@ -18,6 +22,7 @@
         letter-spacing: 1%;
         text-align: center;
         text-transform: uppercase;
+        margin-bottom: 70px;
     }
 
     &__span1 {
@@ -26,5 +31,49 @@
         color: #063835;
         transform: skew(-15deg);
         display: inline-block;
+    }
+
+    &__title3 {
+        font-size: 50px;
+        color: #fff;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    &__text3 {
+        font-size: 30px;
+        text-align: center;
+        font-weight: 400;
+        color: #fff;
+        margin-bottom: 15px;
+    }
+
+    &__star {
+        margin-bottom: 80px;
+    }
+
+    &__slider img {
+        height: 700px !important;
+    }
+
+    &__slider {
+        width: 80% !important;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .trainers {
+        &__title {
+            font-size: 60px;
+        }
+
+        &__slider {
+            width: 100% !important;
+
+            img {
+                max-height: 500px !important;
+            }
+        }
     }
 }
