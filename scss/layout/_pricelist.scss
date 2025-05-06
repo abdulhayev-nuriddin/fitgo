@@ -1,4 +1,6 @@
 .pricelist {
+    background: #1D1E22;
+    padding: 100px 0 150px 0;
 
     &__top {
         font-weight: 600;
@@ -7,6 +9,8 @@
         letter-spacing: -3%;
         text-align: center;
         text-transform: uppercase;
+        color: #fff;
+
     }
 
     &__title {
@@ -16,13 +20,198 @@
         letter-spacing: 1%;
         text-transform: uppercase;
         text-align: center;
+        color: #fff;
     }
 
     &__span1 {
         background-color: #C3FF44;
         font-weight: 900;
-        color: #063835;
+        color: #1D1E22;
         transform: skew(-15deg);
         display: inline-block;
+    }
+
+    &__cards {
+        margin-top: 70px;
+    }
+
+    &__card {
+        width: 400px;
+        height: 600px;
+        padding: 32px;
+        background-color: #292B30;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &__minititle {
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: -1%;
+            padding: 10px 18px;
+            border: 2px solid #fff;
+            border-radius: 40px;
+        }
+
+        &__subtitle {
+            background-color: #FFFFFF1A;
+            padding: 10px;
+            border-radius: 40px;
+        }
+
+        &__price {
+            font-size: 44px;
+        }
+
+        &__description {
+            font-family: "Russo One", sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+            letter-spacing: 0%;
+            text-transform: capitalize;
+        }
+
+        &__btn {
+            width: 100%;
+            padding: 20px 0;
+            border-radius: 40px;
+            border: 2px solid #fff;
+            color: #fff;
+            font-weight: 600;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-color: #fff;
+                color: #292B30;
+            }
+
+            &:active {
+                transform: scale(0.9);
+            }
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        h2,
+        p {
+            color: #fff;
+            font-weight: 400;
+        }
+    }
+
+    &__card2 {
+        width: 400px;
+        height: 600px;
+        padding: 32px;
+        background-color: #fff;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &__minititle2 {
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: -1%;
+            padding: 10px 18px;
+            border: 2px solid #000;
+            border-radius: 40px;
+        }
+
+        &__subtitle2 {
+            background-color: #851EE5;
+            padding: 10px;
+            border-radius: 40px;
+
+            p {
+                color: #fff;
+            }
+        }
+
+        &__price2 {
+            font-size: 44px;
+        }
+
+        &__description2 {
+            font-family: "Russo One", sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+            letter-spacing: 0%;
+            text-transform: capitalize;
+        }
+
+        &__btn2 {
+            width: 100%;
+            padding: 20px 0;
+            border-radius: 40px;
+            background-color: #FE4F31;
+            border: 2px solid #FE4F31;
+            color: #fff;
+            font-weight: 600;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-color: #fff;
+                color: #FE4F31;
+            }
+
+            &:active {
+                transform: scale(0.9);
+            }
+        }
+
+        &__list2 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .pricelist {
+
+        &__title {
+            font-size: 70px;
+            margin-top: 10px;
+        }
+
+        &__cards {
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        &__card,
+        &__card2 {
+            width: 100% !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .pricelist {
+
+        &__title {
+            font-size: 49px;
+            margin-top: 10px;
+        }
+
+        &__cards {
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        &__card,
+        &__card2 {
+            width: 100% !important;
+        }
     }
 }

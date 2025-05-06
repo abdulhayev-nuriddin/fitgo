@@ -178,7 +178,7 @@
 
 @media only screen and (max-width: 768px) {
     .header {
-        height: 55px;
+        height: 70px !important;
 
         &__banner {
             width: 110px;
@@ -209,6 +209,7 @@
 
 @media only screen and (max-width: 480px) {
     .header {
+        height: 60px !important;
 
         &__nav,
         &__registers {
