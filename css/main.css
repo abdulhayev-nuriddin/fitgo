@@ -1059,28 +1059,26 @@ ul li i:active {
   margin-bottom: 80px;
 }
 .trainers__slider img {
-  height: 700px !important;
+  width: 100%;
+  height: 900px;
 }
 .trainers__slider {
-  width: 80% !important;
+  width: 100% !important;
   margin: 0 auto;
 }
 
 @media only screen and (max-width: 768px) {
   .trainers__slider,
   .trainers img {
-    width: 100% !important;
+    height: 700px;
   }
 }
 @media only screen and (max-width: 480px) {
   .trainers__title {
     font-size: 60px;
   }
-  .trainers__slider {
-    width: 100% !important;
-  }
   .trainers__slider img {
-    max-height: 500px !important;
+    height: 550px;
   }
 }
 .highlight {
