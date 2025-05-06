@@ -147,7 +147,7 @@ img {
 
 .header {
   background: #063835;
-  height: 75px;
+  height: 90px !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -501,7 +501,6 @@ ul li i:active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 .hero__container {
   display: flex;
@@ -529,7 +528,7 @@ ul li i:active {
   font-size: 18px;
   line-height: 150%;
   letter-spacing: 2%;
-  color: #fff;
+  color: #E5E4E4;
   padding-top: 16px;
   padding-bottom: 32px;
 }
@@ -572,9 +571,13 @@ ul li i:active {
   border-radius: 50%;
 }
 .hero__background {
-  width: 100%;
+  max-width: 100%;
+  width: 1519px;
+  height: auto;
   position: absolute;
-  top: 80%;
+  top: 800px;
+  z-index: 99;
+  display: block;
 }
 
 @media only screen and (max-width: 768px) {
@@ -637,7 +640,7 @@ ul li i:active {
   }
 }
 .about {
-  padding-top: 100px;
+  padding-top: 150px;
 }
 .about__top {
   display: flex;
@@ -657,11 +660,13 @@ ul li i:active {
   letter-spacing: 1%;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 25px;
+  color: #0c2e68;
 }
 .about__span2 {
   background-color: #C3FF44;
   font-weight: 700;
-  color: #063835;
+  color: #303030;
   display: inline-block;
   transform: skew(-15deg);
 }
@@ -700,7 +705,7 @@ ul li i:active {
   font-size: 20px;
   line-height: 100%;
   letter-spacing: -1%;
-  color: #000;
+  color: #303030;
 }
 .about__text {
   padding-top: 56px;
@@ -709,6 +714,7 @@ ul li i:active {
   font-size: 18px;
   line-height: 150%;
   letter-spacing: 2%;
+  color: #484848;
 }
 .about__button {
   background-color: #FE4F31;
@@ -824,7 +830,7 @@ ul li i:active {
   background-color: #C3FF44;
   color: transparent;
   font-weight: 700;
-  color: #063835;
+  color: #303030;
   display: inline-block;
   transform: skew(-15deg);
 }
@@ -833,7 +839,7 @@ ul li i:active {
   font-size: 18px;
   line-height: 150%;
   letter-spacing: 2%;
-  color: #fff;
+  color: #D3D3D3;
   max-width: 400px;
   width: 100%;
 }
@@ -860,7 +866,7 @@ ul li i:active {
   border-radius: 16px;
 }
 .programs__card__title {
-  color: #fff;
+  color: #D3D3D3;
   font-family: Russo One;
   font-weight: 400;
   font-size: 28px;
@@ -911,6 +917,19 @@ ul li i:active {
 }
 .programs__card2__button:active {
   transform: scale(0.9);
+}
+.programs__icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(195, 255, 68, 0.1490196078);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+.programs__icons img {
+  width: 36px;
+  height: 36px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1002,11 +1021,12 @@ ul li i:active {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 70px;
+  color: #0C2E68;
 }
 .trainers__span1 {
   background-color: #C3FF44;
   font-weight: 900;
-  color: #063835;
+  color: #141E2F;
   transform: skew(-15deg);
   display: inline-block;
 }
@@ -1061,11 +1081,12 @@ ul li i:active {
   line-height: 140%;
   letter-spacing: 1%;
   text-transform: uppercase;
+  color: #0C2E68;
 }
 .highlight__span1 {
   background-color: #C3FF44;
   font-weight: 900;
-  color: #063835;
+  color: #141E2F;
   transform: skew(-15deg);
   display: inline-block;
 }

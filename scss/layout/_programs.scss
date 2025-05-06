@@ -29,7 +29,7 @@
         background-color: #C3FF44;
         color: transparent;
         font-weight: 700;
-        color: #063835;
+        color: #303030;
         display: inline-block;
         transform: skew(-15deg);
     }
@@ -39,7 +39,7 @@
         font-size: 18px;
         line-height: 150%;
         letter-spacing: 2%;
-        color: #fff;
+        color: #D3D3D3;
         max-width: 400px;
         width: 100%;
     }
@@ -69,7 +69,7 @@
         border-radius: 16px;
 
         &__title {
-            color: #fff;
+            color: #D3D3D3;
             font-family: Russo One;
             font-weight: 400;
             font-size: 28px;
@@ -126,6 +126,21 @@
             &:active {
                 transform: scale(0.9);
             }
+        }
+    }
+
+    &__icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #C3FF4426;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+
+        img {
+            width: 36px;
+            height: 36px;
         }
     }
 }
